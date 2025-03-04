@@ -6,8 +6,7 @@
              mc:Ignorable="d" >
     <Border Style="{StaticResource Border-tab}">
         <Grid>
-            <TextBlock>hola</TextBlock>
-            <Button  >PopUp</Button>
+            <TextBlock>hola LUIS</TextBlock>
         </Grid>
     </Border>
 </UserControl>
