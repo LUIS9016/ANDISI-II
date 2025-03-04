@@ -1,0 +1,154 @@
+﻿<UserControl x:Class="ANDISI_Presentacion.VISTAS.TRAMITES.GSI.Gsi_Cdr"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:andi="clr-namespace:ANDISI_Presentacion.RECURSOS.CONTROLES"
+             xmlns:fa="http://schemas.fontawesome.io/icons/"
+             mc:Ignorable="d" >
+    <Border Style="{StaticResource Border-tab}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Registro de Beneficiarios de Regalías" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Margin="10"/>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <StackPanel Style="{StaticResource stack_margin-controls}">
+                        <Label Content="Fecha de Afiliación" />
+                        <DatePicker Style="{StaticResource control_heigh}" x:Name="Date_Afilia"/>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <StackPanel Style="{StaticResource stack_margin-controls}">
+                        <Label Content="Fecha de Modificación" />
+                        <DatePicker Style="{StaticResource control_heigh}" x:Name="Date_Modi"/>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Column="2">
+                    <StackPanel Style="{StaticResource stack_margin-controls}">
+                        <Label Content="No. Beneficiario" />
+                        <TextBox Style="{StaticResource txt-block}" />
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <StackPanel Style="{StaticResource stack_margin-controls}">
+                        <Label Content="Tipo de Beneficiario" />
+                        <ComboBox Style="{StaticResource control_heigh}">
+                            <ComboBoxItem Content="Tipo 1" />
+                            <ComboBoxItem Content="Tipo 2" />
+                            <ComboBoxItem Content="Tipo 3" />
+                            <ComboBoxItem Content="Etc..." />
+                        </ComboBox>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <StackPanel Style="{StaticResource stack_margin-controls}">
+                        <Label Content="Estatus del Beneficiario" />
+                        <ComboBox Style="{StaticResource control_heigh}">
+                            <ComboBoxItem Content="Estatus 1" />
+                            <ComboBoxItem Content="Estatus 2" />
+                            <ComboBoxItem Content="Estatus 3" />
+                            <ComboBoxItem Content="Etc..." />
+                        </ComboBox>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Column="2">
+                    <StackPanel Style="{StaticResource stack_margin-controls}">
+                        <Label Content="% Reparto" />
+                        <TextBox Style="{StaticResource control_heigh}" MaxLength="50" Tag="validate"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <StackPanel Style="{StaticResource stack_margin-controls}">
+                        <Label Content="Nombres" />
+                        <TextBox Style="{StaticResource control_heigh}" MaxLength="50" Tag="validate"/>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <StackPanel Style="{StaticResource stack_margin-controls}">
+                        <Label Content="Apellido Materno" />
+                        <TextBox Style="{StaticResource control_heigh}" MaxLength="50" Tag="validate"/>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Column="2">
+                    <StackPanel Style="{StaticResource stack_margin-controls}">
+                        <Label Content="Apellido Paterno" />
+                        <TextBox Style="{StaticResource control_heigh}" MaxLength="50" Tag="validate"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="4" Margin="0,20,0,20">
+                <Button Style="{StaticResource btn}" Content="Guardar" />
+            </Grid>
+
+            <Grid Grid.Row="5" Margin="0,0,0,20">
+                <Label Content="Lista de Socios" HorizontalAlignment="Center" />
+                <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" HorizontalAlignment="Center" HeadersVisibility="Column" CanUserAddRows="False">
+                    <DataGrid.Columns>
+                        <!--<DataGridTextColumn Header="Fecha de Afiliación" Binding="{Binding FechaAfilia}" />
+                        <DataGridTextColumn Header="Fecha de Modificación" Binding="{Binding FechaMod}" />
+                        <DataGridTextColumn Header="No. Beneficiario" Binding="{Binding NoBene}" />
+                        <DataGridTextColumn Header="Tipo de Beneficiario" Binding="{Binding TipBene}" />
+                        <DataGridTextColumn Header="Estatus del Beneficiario" Binding="{Binding EstatusBene}" />
+                        <DataGridTextColumn Header="Nombre del Beneficiario" Binding="{Binding NomBene}" />
+                        <DataGridTextColumn Header="% Reparto" Binding="{Binding Reparto}" />-->
+                        <DataGridTemplateColumn Header="Acciones" Width="Auto">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="3">
+                                        <Button Style="{DynamicResource btn-icon-crash}" Margin="0,0,2,0">
+                                            <fa:ImageAwesome Icon="Times" Margin="3"/>
+                                        </Button>
+                                        <Button Style="{DynamicResource btn-icon-edit}" Margin="0,0,2,0">
+                                            <fa:ImageAwesome Icon="PencilSquare" Margin="3"/>
+                                        </Button>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
+    </Border>
+
+</UserControl>

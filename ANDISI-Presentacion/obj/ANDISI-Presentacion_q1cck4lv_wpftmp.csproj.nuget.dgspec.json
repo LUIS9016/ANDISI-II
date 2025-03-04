@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Presentacion\\ANDISI-Presentacion.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Datos\\ANDISI-Datos.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Datos\\ANDISI-Datos.csproj",
+        "projectName": "ANDISI-Datos",
+        "projectPath": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Datos\\ANDISI-Datos.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Entidades\\ANDISI-Entidades.csproj": {
+                "projectPath": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Entidades\\ANDISI-Entidades.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Entidades\\ANDISI-Entidades.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Entidades\\ANDISI-Entidades.csproj",
+        "projectName": "ANDISI-Entidades",
+        "projectPath": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Entidades\\ANDISI-Entidades.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Negocio\\ANDISI-Negocio.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Negocio\\ANDISI-Negocio.csproj",
+        "projectName": "ANDISI-Negocio",
+        "projectPath": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Negocio\\ANDISI-Negocio.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Datos\\ANDISI-Datos.csproj": {
+                "projectPath": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Datos\\ANDISI-Datos.csproj"
+              },
+              "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Entidades\\ANDISI-Entidades.csproj": {
+                "projectPath": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Entidades\\ANDISI-Entidades.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Presentacion\\ANDISI-Presentacion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Presentacion\\ANDISI-Presentacion.csproj",
+        "projectName": "ANDISI-Presentacion",
+        "projectPath": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Presentacion\\ANDISI-Presentacion.csproj",
+        "packagesPath": "C:\\Users\\andi_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Presentacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\andi_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Entidades\\ANDISI-Entidades.csproj": {
+                "projectPath": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Entidades\\ANDISI-Entidades.csproj"
+              },
+              "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Negocio\\ANDISI-Negocio.csproj": {
+                "projectPath": "C:\\Users\\andi_\\OneDrive\\Documentos\\ANDISI-II\\ANDISI-Negocio\\ANDISI-Negocio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "FontAwesome.WPF": {
+              "target": "Package",
+              "version": "[4.7.0.9, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

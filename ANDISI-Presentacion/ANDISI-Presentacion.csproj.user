@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Login_Andi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RECURSOS\CONTROLES\Combo_Add.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RECURSOS\CONTROLES\Contenedor_Popup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RECURSOS\CONTROLES\Datepicker_Upload.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RECURSOS\CONTROLES\Label_Add.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RECURSOS\CONTROLES\Label_Usuario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RECURSOS\CONTROLES\Text_Upload.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\DISTRIBUCION\AUS\Aus_Dis.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\DISTRIBUCION\AUS\Dis_Gen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\DOCUMENTACION\AUS\Aus_Doc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\DOCUMENTACION\AUS\Doc_Bus.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\DOCUMENTACION\AUS\Doc_Gen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\Menu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\PUBLICIDAD\AUS\Aus_Pub.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi_Banc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi_Bus.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi_Cdf.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi_Cdr.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi_Cv.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi_Dir.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi_Doc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi_Gen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi_Obr.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSI\Gsi_Pen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\PUBLICIDAD\AUS\Pub_Gen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VISTAS\TRAMITES\GSM\Gsm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="RECURSOS\STYLE\Style_Controles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RECURSOS\STYLE\Style_Colors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RECURSOS\STYLE\Style_Size_Control.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\Menu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi_Banc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi_Bus.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi_Cdf.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi_Cdr.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi_Cv.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi_Dir.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi_Doc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi_Gen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi_Obr.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VISTAS\TRAMITES\GSI\Gsi_Pen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

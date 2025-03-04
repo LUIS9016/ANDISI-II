@@ -1,0 +1,6 @@
+VERSION		FECHA	 	QUIEN MODIFICO		ARCHIVOS ACTUALIZADOS		FUNCIONALIDAD
+--------------------------------------------------------------------------------------------------------------------
+
+1.0		11/02/25	Miguel Abarca		TODOS				CREACION DEL PROYECTO
+											CONSULTA PARA CARGA DE MENU
+--------------------------------------------------------------------------------------------------------------------

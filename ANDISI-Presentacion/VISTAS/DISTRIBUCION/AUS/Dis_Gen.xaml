@@ -1,0 +1,192 @@
+﻿<UserControl x:Class="ANDISI_Presentacion.VISTAS.DISTRIBUCION.AUS.Dis_Gen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:andi_control="clr-namespace:ANDISI_Presentacion.RECURSOS.CONTROLES"
+             xmlns:fa="http://schemas.fontawesome.io/icons/"
+             mc:Ignorable="d">
+    <Border  Style="{StaticResource Border-tab}">
+        <Grid Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Primer Grid -->
+            <Grid Grid.Column="0">
+                <Border BorderBrush="LightGray" BorderThickness="0,0,1,0">
+                    <StackPanel   Style="{StaticResource stack_margin}"  >
+                        <Label Content="No.Socio"   />
+                        <TextBox  Style="{StaticResource txt-block}" />
+
+                        <Label Content="Estatus Socio"  />
+                        <ComboBox Style="{StaticResource control_heigh}">
+                            <ComboBoxItem Content="Estatus 1" />
+                            <ComboBoxItem Content="Estatus 2" />
+                            <ComboBoxItem Content="Estatus 3" />
+                            <ComboBoxItem Content="Etc..." />
+                        </ComboBox>
+
+                        <Label Content="Nombres"  />
+                        <TextBox  Style="{StaticResource control_heigh}" MaxLength="50" Tag="validate" />
+
+                        <Label Content="Nombre Artístico"/>
+                        <andi_control:Combo_Add/>
+
+                        <Label Content="IPDAN"  />
+                        <TextBox Style="{StaticResource control_heigh}" MaxLength="50" Tag="validate"/>
+
+                        <Label Content="Nacionalidad Procedencia"  />
+                        <ComboBox Style="{StaticResource control_heigh}">
+                            <ComboBoxItem Content="Procedencia 1" />
+                            <ComboBoxItem Content="Procedencia 2" />
+                            <ComboBoxItem Content="Procedencia 3" />
+                            <ComboBoxItem Content="Etc..." />
+                        </ComboBox>
+
+                        <Label Content="Género"  />
+                        <ComboBox  Style="{StaticResource control_heigh}"  >
+                            <ComboBoxItem Content="Femenino" />
+                            <ComboBoxItem Content="Masculino" />
+                            <ComboBoxItem Content="Otro" />
+                            <ComboBoxItem Content="Prefiero no decir" />
+                        </ComboBox>
+
+                        <Label Content="CURP"  />
+                        <TextBox Style="{StaticResource control_heigh}" MaxLength="50" Tag="validate"/>
+
+                        <Label Content="# Poder Notarial"  />
+                        <andi_control:Text_Upload/>
+
+                        <Label Content="Fecha Alta"  />
+                        <TextBox Style="{StaticResource txt-block}" />
+
+                        <Label Content="Fecha Modificación"  />
+                        <TextBox  Style="{StaticResource txt-block}" />
+
+
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <!-- Segundo Grid -->
+            <Grid  Grid.Column="1">
+                <Border BorderBrush="LightGray" BorderThickness="0,0,1,0">
+                    <StackPanel  Style="{StaticResource stack_margin}">
+                        <Rectangle Height="56"></Rectangle>
+                        <Label Content="Categoría Socio"  />
+                        <ComboBox Style="{StaticResource control_heigh}">
+                            <ComboBoxItem Content="Tipo 1" />
+                            <ComboBoxItem Content="Tipo 2" />
+                            <ComboBoxItem Content="Tipo 3" />
+                            <ComboBoxItem Content="Etc..." />
+                        </ComboBox>
+
+                        <Label Content="Apellido Paterno"  />
+                        <TextBox Style="{StaticResource control_heigh}" MaxLength="50" Tag="validate"/>
+
+                        <Label Content="Actividad Artística"  />
+                        <andi_control:Combo_Add/>
+
+                        <Label Content="Cve Socio Otras Sociedades"  />
+                        <TextBox Style="{StaticResource control_heigh}" MaxLength="50" Tag="validate"/>
+
+                        <Label Content="Nacionalidad Residencia"  />
+                        <ComboBox Style="{StaticResource control_heigh}" >
+                            <ComboBoxItem Content="México" />
+                            <ComboBoxItem Content="Colombia" />
+                            <ComboBoxItem Content="Obligacion 3" />
+                            <ComboBoxItem Content="Etc..." />
+                        </ComboBox>
+
+                        <Label Content="Fecha Nacimiento"  />
+                        <andi_control:Datepicker_Upload/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Content="Menor de edad"  />
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <CheckBox Height="30" HorizontalAlignment="Center" Grid.Column="0" Content="Sí"   Style="{StaticResource check-30}"/>
+                        </Grid>
+                        <Label Content="Fecha Poder"  />
+                        <DatePicker Style="{StaticResource control_heigh}" x:Name="Date_Fecha_Notarial" />
+
+                        <Label Content="Motivo Alta"  />
+                        <andi_control:Combo_Add />
+
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <!-- Tercer Grid -->
+            <Grid  Grid.Column="2">
+                <Border BorderBrush="LightGray" BorderThickness="0,0,1,0">
+                    <StackPanel  Style="{StaticResource stack_margin}" >
+                        <Rectangle Height="56"></Rectangle>
+
+                        <Label Content="Fecha Activo"  />
+                        <TextBox Style="{StaticResource txt-block}"  MaxLength="50" Tag="validate" />
+
+                        <Label Content="Apellido Materno"  />
+                        <TextBox x:Name="Txt_APM"  Style="{StaticResource control_heigh}"  MaxLength="50" Tag="validate"/>
+
+                        <Label Content="Número Socio ANDA"  />
+                        <andi_control:Text_Upload />
+
+                        <Label Content="Otras Sociedades "  />
+                        <andi_control:Combo_Add/>
+                        <Label Content="Otras Nacionalidades"/>
+                        <andi_control:Combo_Add/>
+
+                        <Label Content="RFC"  />
+                        <TextBox  Style="{StaticResource control_heigh }"  MaxLength="50" Tag="validate"/>
+
+                        <Label Content="Fecha Mayoría Edad"  />
+                        <DatePicker  Style="{StaticResource control_heigh}" x:Name="Date_Mayoria"/>
+
+                        <Label Content="Tipo Mandato"  />
+                        <TextBox x:Name="Txt_Mandato"  Style="{StaticResource control_heigh}"  MaxLength="50" Tag="validate"/>
+
+                        <Label Content="Años ANDI"  />
+                        <TextBox  Style="{StaticResource txt-block}" MaxLength="50" Tag="validate" />
+
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <Grid Grid.Column="3">
+                <StackPanel   Style="{StaticResource stack_margin}">
+                    <Rectangle Fill="White" Height="27"/>
+                    <Label Content="FOTO" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button Width="200" Height="170" x:Name="Usuario">
+                        <Button.Content>
+                            <Image Source="/RECURSOS/IMG/Empty.png"  Height="50" Width="200"/>
+                        </Button.Content>
+                    </Button>
+
+                    <Rectangle Fill="White" Height="30"/>
+                    <Label Content="FIRMA" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button Width="200" Height="170" x:Name="Firma">
+                        <Button.Content>
+                            <Image Source="/RECURSOS/IMG/firma.png"  Height="50" Width="200"/>
+                        </Button.Content>
+                    </Button>
+                    <Button Margin="0,25,0,0" Style="{StaticResource btn-xlg}" Content="Imprimir Credencial" Visibility="Hidden" ></Button>
+                    <Button Margin="0,25,0,0" Style="{StaticResource btn-lg}" Command="{Binding IsEmpty}" Content="Actualizar" ></Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+
+    </Border>
+</UserControl>
